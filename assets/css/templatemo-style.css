@@ -388,6 +388,7 @@ button:hover {
     height: 100%
     padding-left: 5px;
     padding-right: 5px;
+    padding-bottom: 0px;
 }
 
 .service-item {
