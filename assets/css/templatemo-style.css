@@ -65,6 +65,13 @@ html {
     box-sizing: border-box;
 }
 
+.row{
+    margin-right: -15px;
+    margin-left: -15px;
+    column-count: 2;
+    display: inline-block;
+}
+
 *,
 *:before,
 *:after {
