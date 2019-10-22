@@ -466,6 +466,30 @@ button:hover {
     background-image: url(../images/fifth-main-icon.png);
 }
 
+.service-item .sixth-service-icon {
+    background-image: url(../images/sixth-white-icon.png);
+}
+
+.service-item:hover .sixth-service-icon {
+    background-image: url(../images/sixth-main-icon.png);
+}
+
+.service-item .seventh-service-icon {
+    background-image: url(../images/seventh-white-icon.png);
+}
+
+.service-item:hover .seventh-service-icon {
+    background-image: url(../images/seventh-main-icon.png);
+}
+
+.service-item .eighth-service-icon {
+    background-image: url(../images/eighth-white-icon.png);
+}
+
+.service-item:hover .eighth-service-icon {
+    background-image: url(../images/eighth-main-icon.png);
+}
+
 
 /* My Trip */
 
