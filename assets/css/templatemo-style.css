@@ -385,8 +385,9 @@ button:hover {
 /* Services */
 
 .my-services .col-md-6 {
-    /* padding-left: 5px;
-    padding-right: 5px; */
+    height: 100%
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .service-item {
