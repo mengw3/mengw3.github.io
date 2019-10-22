@@ -66,9 +66,9 @@ html {
 }
 
 .row{
-    /* margin-right: 15px;
-    margin-left: 15px;
-    column-count: 2; */
+    margin-right: 5px;
+    margin-left: 5px;
+    column-count: 2;
     display: inline-block;
 }
 
