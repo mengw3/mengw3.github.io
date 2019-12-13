@@ -490,6 +490,22 @@ button:hover {
     background-image: url(../images/eighth-main-icon.png);
 }
 
+.service-item .ninth-service-icon {
+    background-image: url(../images/ninth-white-icon.png);
+}
+
+.service-item:hover .ninth-service-icon {
+    background-image: url(../images/ninth-main-icon.png);
+}
+
+.service-item .tenth-service-icon {
+    background-image: url(../images/tenth-white-icon.png);
+}
+
+.service-item:hover .tenth-service-icon {
+    background-image: url(../images/tenth-main-icon.png);
+}
+
 
 /* My Trip */
 
