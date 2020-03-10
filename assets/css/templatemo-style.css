@@ -506,6 +506,14 @@ button:hover {
     background-image: url(../images/tenth-main-icon.png);
 }
 
+.service-item .eleventh-service-icon {
+    background-image: url(../images/eleventh-white-icon.png);
+}
+
+.service-item:hover .eleventh-service-icon {
+    background-image: url(../images/eleventh-main-icon.png);
+}
+
 
 /* My Trip */
 

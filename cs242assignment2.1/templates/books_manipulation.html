@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+
+{% block title %}data manipulation{% endblock %}
+{% block page_content %}
+
+
+<div class="container-fluid">
+
+  <div class="row">
+      <div class="col-lg-12">
+          <div class="card">
+              <div class="card-body">
+                  <h4 class="card-title">Insert data</h4>
+                  <p class="text-muted">insert data into database</p>
+                  {% if message %}
+                  {{message}}!
+                  {% endif %}
+                  <form name="input"  method="post">
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-user icon_font"></i>
+                          <label for="title" class="sr-only">title</label>
+                          <input type="book" name="title" class="form-control" id="title" placeholder="title" autofocus><br>
+                      </div>
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-user icon_font"></i>
+                          <label for="book_url" class="sr-only">book_url</label>
+                          <input type="book" name="book_url" class="form-control" id="book_url" placeholder="book_url" autofocus><br>
+                      </div>
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-user icon_font"></i>
+                          <label for="book_id" class="sr-only">book_id</label>
+                          <input type="book" name="book_id" class="form-control" id="book_id" placeholder="book_id" autofocus><br>
+                      </div>
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-lock icon_font"></i>
+                          <label for="isbn" class="sr-only">isbn</label>
+                          <input type="book" name="isbn" id="isbn" class="form-control" placeholder="isbn"><br>
+                      </div>
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-lock icon_font"></i>
+                          <label for="author_url" class="sr-only">author_url</label>
+                          <input type="book" name="author_url" id="author_url" class="form-control" placeholder="author_url"><br>
+                      </div>
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-lock icon_font"></i>
+                          <label for="author" class="sr-only">author</label>
+                          <input type="book" name="author" id="author" class="form-control" placeholder="author"><br>
+                      </div>
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-lock icon_font"></i>
+                          <label for="rating" class="sr-only">rating</label>
+                          <input type="book" name="rating" id="rating" class="form-control" placeholder="rating"><br>
+                      </div>
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-lock icon_font"></i>
+                          <label for="rating_count" class="sr-only">rating_count</label>
+                          <input type="book" name="rating_count" id="rating_count" class="form-control" placeholder="rating_count"><br>
+                      </div>
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-lock icon_font"></i>
+                          <label for="review_count" class="sr-only">review_count</label>
+                          <input type="book" name="review_count" id="review_count" class="form-control" placeholder="review_count"><br>
+                      </div>
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-lock icon_font"></i>
+                          <label for="image_url" class="sr-only">image_url</label>
+                          <input type="book" name="image_url" id="image_url" class="form-control" placeholder="image_url"><br>
+                      </div>
+                      <input type="submit" class="btn btn-primary" name="input" value="Insert"><br>
+              </form>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Search with book id</h4>
+                    <p class="text-muted">search data inside database</p>
+                      {% if message %}
+                      {{message}}!
+                      {% endif %}
+                      <form name="input"  method="post">
+                          <div class="form-group mg-t20" style ="font-family:verdana">
+                              <i class="icon-user icon_font"></i>
+                              <label for="search_book_id" class="sr-only">search_book_id</label>
+                              <input type="search_book" name="search_book_id" class="form-control" id="search_book_id" placeholder="search_book_id" autofocus><br>
+                          </div>
+                          <input type="submit" class="btn btn-primary" name="input" value="Search"><br>
+                      </form>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Delete with book id</h4>
+                        <p class="text-muted">delete data inside database</p>
+                          {% if message %}
+                          {{message}}!
+                          {% endif %}
+                          <form name="input"  method="post">
+                              <div class="form-group mg-t20" style ="font-family:verdana">
+                                  <i class="icon-user icon_font"></i>
+                                  <label for="deleted_book_id" class="sr-only">deleted_book_id</label>
+                                  <input type="deleted_book" name="deleted_book_id" class="form-control" id="deleted_book_id" placeholder="deleted_book_id" autofocus><br>
+                              </div>
+                              <input type="submit" class="btn btn-primary" name="input" value="Delete"><br>
+                          </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="card">
+                      <div class="card-body">
+                          <h4 class="card-title">update with book id</h4>
+                          <p class="text-muted">update data inside database</p>
+                            {% if message %}
+                            {{message}}!
+                            {% endif %}
+                            <form name="input"  method="post">
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="input_book_id" class="sr-only">input_book_id</label>
+                                    <input type="updated_book" name="input_book_id" class="form-control" id="input_book_id" placeholder="input_book_id" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_book_url" class="sr-only">update_book_url</label>
+                                    <input type="updated_book" name="update_book_url" class="form-control" id="update_book_url" placeholder="update_book_url" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_title" class="sr-only">update_title</label>
+                                    <input type="updated_book" name="update_title" class="form-control" id="update_title" placeholder="update_title" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_book_id" class="sr-only">update_book_id</label>
+                                    <input type="updated_book" name="update_book_id" class="form-control" id="update_book_id" placeholder="update_book_id" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_isbn" class="sr-only">update_isbn</label>
+                                    <input type="updated_book" name="update_isbn" class="form-control" id="update_isbn" placeholder="update_isbn" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_author_url" class="sr-only">update_author_url</label>
+                                    <input type="updated_book" name="update_author_url" class="form-control" id="update_author_url" placeholder="update_author_url" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_author" class="sr-only">update_author</label>
+                                    <input type="updated_book" name="update_author" class="form-control" id="update_author" placeholder="update_author" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_rating" class="sr-only">update_rating</label>
+                                    <input type="updated_book" name="update_rating" class="form-control" id="update_rating" placeholder="update_rating" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_rating_count" class="sr-only">update_rating_count</label>
+                                    <input type="updated_book" name="update_rating_count" class="form-control" id="update_rating_count" placeholder="update_rating_count" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_review_count" class="sr-only">update_review_count</label>
+                                    <input type="updated_book" name="update_review_count" class="form-control" id="update_review_count" placeholder="update_review_count" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_image_url" class="sr-only">update_image_url</label>
+                                    <input type="updated_book" name="update_image_url" class="form-control" id="update_image_url" placeholder="update_image_url" autofocus><br>
+                                </div>
+                                <input type="submit" class="btn btn-primary" name="input" value="Update"><br>
+                            </form>
+                      </div>
+                  </div>
+              </div>
+            </div>
+</div>
+{% endblock %}

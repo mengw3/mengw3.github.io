@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+          <div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="active-member">
+                                <div class="table-responsive">
+                                  <table class="table table-xs mb-0">
+                                    <thead>
+                                      <tr>
+                                          <th>title</th>
+                                          <th>book_url</th>
+                                          <th>book_id</th>
+                                          <th>isbn</th>
+                                          <th>author_url</th>
+                                          <th>author</th>
+                                          <th>rating</th>
+                                          <th>rating_count</th>
+                                          <th>review_count</th>
+                                          <th>image_url</th>
+                                          <th>similar_books</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                      {% for i in u %}
+                                          <tr>
+                                              <td>{{ i.get('title') }}</td>
+                                              <td>{{ i.get('book_url') }}</td>
+                                              <td>{{ i.get('book_id') }}</td>
+                                              <td>{{ i.get('isbn') }}</td>
+                                              <td>{{ i.get('author_url') }}</td>
+                                              <td>{{ i.get('author') }}</td>
+                                              <td>{{ i.get('rating') }}</td>
+                                              <td>{{ i.get('rating_count') }}</td>
+                                              <td>{{ i.get('review_count') }}</td>
+                                              <td>{{ i.get('image_url') }}</td>
+                                              <td>{{ i.get('sim_books')[0] }}</td>
+                                          </tr>
+                                      {% endfor %}
+                                    </tbody>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                  </div>
+            </div>
+          </div>
+
+{% endblock %}

@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+
+{% block title %}data manipulation{% endblock %}
+{% block page_content %}
+
+
+<div class="container-fluid">
+
+  <div class="row">
+      <div class="col-lg-12">
+          <div class="card">
+              <div class="card-body">
+                  <h4 class="card-title">Insert data</h4>
+                  <p class="text-muted">insert data into database</p>
+                  {% if message %}
+                  {{message}}!
+                  {% endif %}
+                  <form name="input"  method="post">
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-user icon_font"></i>
+                          <label for="name" class="sr-only">name</label>
+                          <input type="author" name="name" class="form-control" id="name" placeholder="name" autofocus><br>
+                      </div>
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-user icon_font"></i>
+                          <label for="author_url" class="sr-only">author_url</label>
+                          <input type="author" name="author_url" class="form-control" id="author_url" placeholder="author_url" autofocus><br>
+                      </div>
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-user icon_font"></i>
+                          <label for="author_id" class="sr-only">author_id</label>
+                          <input type="author" name="author_id" class="form-control" id="author_id" placeholder="author_id" autofocus><br>
+                      </div>
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-lock icon_font"></i>
+                          <label for="rating" class="sr-only">rating</label>
+                          <input type="author" name="rating" id="rating" class="form-control" placeholder="rating"><br>
+                      </div>
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-lock icon_font"></i>
+                          <label for="rating_count" class="sr-only">rating_count</label>
+                          <input type="author" name="rating_count" id="rating_count" class="form-control" placeholder="rating_count"><br>
+                      </div>
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-lock icon_font"></i>
+                          <label for="review_count" class="sr-only">review_count</label>
+                          <input type="author" name="review_count" id="review_count" class="form-control" placeholder="review_count"><br>
+                      </div>
+                      <div class="form-group mg-t20" style ="font-family:verdana">
+                          <i class="icon-lock icon_font"></i>
+                          <label for="image_url" class="sr-only">image_url</label>
+                          <input type="author" name="image_url" id="image_url" class="form-control" placeholder="image_url"><br>
+                      </div>
+                      <input type="submit" class="btn btn-primary" name="input" value="Insert"><br>
+              </form>
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Search with author id</h4>
+                    <p class="text-muted">search data inside database</p>
+                      {% if message %}
+                      {{message}}!
+                      {% endif %}
+                      <form name="input"  method="post">
+                          <div class="form-group mg-t20" style ="font-family:verdana">
+                              <i class="icon-user icon_font"></i>
+                              <label for="search_author_id" class="sr-only">search_author_id</label>
+                              <input type="search_author" name="search_author_id" class="form-control" id="search_author_id" placeholder="search_author_id" autofocus><br>
+                          </div>
+                          <input type="submit" class="btn btn-primary" name="input" value="Search"><br>
+                      </form>
+                </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Delete with author id</h4>
+                        <p class="text-muted">delete data inside database</p>
+                          {% if message %}
+                          {{message}}!
+                          {% endif %}
+                          <form name="input"  method="post">
+                              <div class="form-group mg-t20" style ="font-family:verdana">
+                                  <i class="icon-user icon_font"></i>
+                                  <label for="deleted_author_id" class="sr-only">deleted_author_id</label>
+                                  <input type="deleted_author" name="deleted_author_id" class="form-control" id="deleted_author_id" placeholder="deleted_author_id" autofocus><br>
+                              </div>
+                              <input type="submit" class="btn btn-primary" name="input" value="Delete"><br>
+                          </form>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="card">
+                      <div class="card-body">
+                          <h4 class="card-title">update with author id</h4>
+                          <p class="text-muted">update data inside database</p>
+                            {% if message %}
+                            {{message}}!
+                            {% endif %}
+                            <form name="input"  method="post">
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="input_author_id" class="sr-only">input_author_id</label>
+                                    <input type="updated_author" name="input_author_id" class="form-control" id="input_author_id" placeholder="input_author_id" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_name" class="sr-only">update_name</label>
+                                    <input type="updated_author" name="update_name" class="form-control" id="update_name" placeholder="update_name" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_author_url" class="sr-only">update_author_url</label>
+                                    <input type="updated_author" name="update_author_url" class="form-control" id="update_author_url" placeholder="update_author_url" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_author_id" class="sr-only">update_author_id</label>
+                                    <input type="updated_author" name="update_author_id" class="form-control" id="update_author_id" placeholder="update_author_id" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_rating" class="sr-only">update_rating</label>
+                                    <input type="updated_author" name="update_rating" class="form-control" id="update_rating" placeholder="update_rating" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_rating_count" class="sr-only">update_rating_count</label>
+                                    <input type="updated_author" name="update_rating_count" class="form-control" id="update_rating_count" placeholder="update_rating_count" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_review_count" class="sr-only">update_review_count</label>
+                                    <input type="updated_author" name="update_review_count" class="form-control" id="update_review_count" placeholder="update_review_count" autofocus><br>
+                                </div>
+                                <div class="form-group mg-t20" style ="font-family:verdana">
+                                    <i class="icon-user icon_font"></i>
+                                    <label for="update_image_url" class="sr-only">update_image_url</label>
+                                    <input type="updated_author" name="update_image_url" class="form-control" id="update_image_url" placeholder="update_image_url" autofocus><br>
+                                </div>
+                                <input type="submit" class="btn btn-primary" name="input" value="Update"><br>
+                            </form>
+                      </div>
+                  </div>
+              </div>
+            </div>
+</div>
+{% endblock %}
