@@ -442,36 +442,36 @@ button:hover {
 }
 
 
-/* Services */
+/* Reports */
 
-.service-item {
+.report-item {
     margin-bottom: 10px;
     padding: 50px;
     background-color: rgba(250, 250, 250, 0.1);
     transition: all 0.5s;
 }
 
-.service-item h4 {
+.report-item h4 {
     transition: all 0.5s;
 }
 
-.service-item p {
+.report-item p {
     transition: all 0.5s;
 }
 
-.service-item:hover {
+.report-item:hover {
     background-color: rgba(250, 250, 250, 1);
 }
 
-.service-item:hover h4 {
+.report-item:hover h4 {
     color: #1e1e1e;
 }
 
-.service-item:hover p {
+.report-item:hover p {
     color: #4a4a4a;
 }
 
-.service-item .service-icon {
+.report-item .report-icon {
     width: 70px;
     height: 70px;
     display: inline-block;
@@ -481,94 +481,132 @@ button:hover {
     transition: all 0.5s;
 }
 
-.service-item .first-service-icon {
-    background-image: url(../images/first-white-icon.png);
+.report-item .first-report-icon {
+    background-image: url(../images/report-first-white-icon.png);
 }
 
-.service-item:hover .first-service-icon {
-    background-image: url(../images/first-main-icon.png);
+.report-item:hover .first-report-icon {
+    background-image: url(../images/report-first-main-icon.png);
 }
 
-.service-item .second-service-icon {
-    background-image: url(../images/second-white-icon.png);
+.report-item .second-report-icon {
+    background-image: url(../images/report-second-white-icon.png);
 }
 
-.service-item:hover .second-service-icon {
-    background-image: url(../images/second-main-icon.png);
+.report-item:hover .second-report-icon {
+    background-image: url(../images/report-second-main-icon.png);
 }
 
-.service-item .third-service-icon {
-    background-image: url(../images/third-white-icon.png);
+.report-item .third-report-icon {
+    background-image: url(../images/report-third-white-icon.png);
 }
 
-.service-item:hover .third-service-icon {
-    background-image: url(../images/third-main-icon.png);
+.report-item:hover .third-report-icon {
+    background-image: url(../images/report-third-main-icon.png);
 }
 
-.service-item .fourth-service-icon {
-    background-image: url(../images/fourth-white-icon.png);
+.report-item .fourth-report-icon {
+    background-image: url(../images/report-fourth-white-icon.png);
 }
 
-.service-item:hover .fourth-service-icon {
-    background-image: url(../images/fourth-main-icon.png);
+.report-item:hover .fourth-report-icon {
+    background-image: url(../images/report-fourth-main-icon.png);
 }
 
-.service-item .fifth-service-icon {
-    background-image: url(../images/fifth-white-icon.png);
+.report-item .fifth-report-icon {
+    background-image: url(../images/report-fifth-white-icon.png);
 }
 
-.service-item:hover .fifth-service-icon {
-    background-image: url(../images/fifth-main-icon.png);
+.report-item:hover .fifth-report-icon {
+    background-image: url(../images/report-fifth-main-icon.png);
 }
 
-.service-item .sixth-service-icon {
-    background-image: url(../images/sixth-white-icon.png);
+/* Projects */
+
+.project-item {
+    margin-bottom: 10px;
+    padding: 50px;
+    background-color: rgba(250, 250, 250, 0.1);
+    transition: all 0.5s;
 }
 
-.service-item:hover .sixth-service-icon {
-    background-image: url(../images/sixth-main-icon.png);
+.project-item h4 {
+    transition: all 0.5s;
 }
 
-.service-item .seventh-service-icon {
-    background-image: url(../images/seventh-white-icon.png);
+.project-item p {
+    transition: all 0.5s;
 }
 
-.service-item:hover .seventh-service-icon {
-    background-image: url(../images/seventh-main-icon.png);
+.project-item:hover {
+    background-color: rgba(250, 250, 250, 1);
 }
 
-.service-item .eighth-service-icon {
-    background-image: url(../images/eighth-white-icon.png);
+.project-item:hover h4 {
+    color: #1e1e1e;
 }
 
-.service-item:hover .eighth-service-icon {
-    background-image: url(../images/eighth-main-icon.png);
+.project-item:hover p {
+    color: #4a4a4a;
 }
 
-.service-item .ninth-service-icon {
-    background-image: url(../images/ninth-white-icon.png);
+.project-item .project-icon {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
 }
 
-.service-item:hover .ninth-service-icon {
-    background-image: url(../images/ninth-main-icon.png);
+.project-item .first-project-icon {
+    background-image: url(../images/project-first-white-icon.png);
 }
 
-.service-item .tenth-service-icon {
-    background-image: url(../images/tenth-white-icon.png);
+.project-item:hover .first-project-icon {
+    background-image: url(../images/project-first-main-icon.png);
 }
 
-.service-item:hover .tenth-service-icon {
-    background-image: url(../images/tenth-main-icon.png);
+.project-item .second-project-icon {
+    background-image: url(../images/project-second-white-icon.png);
 }
 
-.service-item .eleventh-service-icon {
-    background-image: url(../images/eleventh-white-icon.png);
+.project-item:hover .second-project-icon {
+    background-image: url(../images/project-second-main-icon.png);
 }
 
-.service-item:hover .eleventh-service-icon {
-    background-image: url(../images/eleventh-main-icon.png);
+.project-item .third-project-icon {
+    background-image: url(../images/project-third-white-icon.png);
 }
 
+.project-item:hover .third-project-icon {
+    background-image: url(../images/project-third-main-icon.png);
+}
+
+.project-item .fourth-project-icon {
+    background-image: url(../images/project-fourth-white-icon.png);
+}
+
+.project-item:hover .fourth-project-icon {
+    background-image: url(../images/project-fourth-main-icon.png);
+}
+
+.project-item .fifth-project-icon {
+    background-image: url(../images/project-fifth-white-icon.png);
+}
+
+.project-item:hover .fifth-project-icon {
+    background-image: url(../images/project-fifth-main-icon.png);
+}
+
+.project-item .sixth-project-icon {
+    background-image: url(../images/project-sixth-white-icon.png);
+}
+
+.project-item:hover .sixth-project-icon {
+    background-image: url(../images/project-sixth-main-icon.png);
+}
 
 /* My Trip */
 
