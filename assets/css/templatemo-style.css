@@ -399,6 +399,10 @@ button:hover {
     transition: all 0.5s;
 }
 
+.research-item h5 {
+    transition: all 0.5s;
+}
+
 .research-item p {
     transition: all 0.5s;
 }
@@ -408,6 +412,10 @@ button:hover {
 }
 
 .research-item:hover h4 {
+    color: #1e1e1e;
+}
+
+.research-item:hover h5 {
     color: #1e1e1e;
 }
 
@@ -455,6 +463,10 @@ button:hover {
     transition: all 0.5s;
 }
 
+.research-item h5 {
+    transition: all 0.5s;
+}
+
 .report-item p {
     transition: all 0.5s;
 }
@@ -464,6 +476,10 @@ button:hover {
 }
 
 .report-item:hover h4 {
+    color: #1e1e1e;
+}
+
+.report-item:hover h5 {
     color: #1e1e1e;
 }
 
@@ -534,6 +550,10 @@ button:hover {
     transition: all 0.5s;
 }
 
+.project-item h5 {
+    transition: all 0.5s;
+}
+
 .project-item p {
     transition: all 0.5s;
 }
@@ -543,6 +563,10 @@ button:hover {
 }
 
 .project-item:hover h4 {
+    color: #1e1e1e;
+}
+
+.project-item:hover h5 {
     color: #1e1e1e;
 }
 
